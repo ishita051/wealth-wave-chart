@@ -1,73 +1,151 @@
-# Welcome to your Lovable project
+# Personal Finance Visualizer
 
-## Project info
+A comprehensive web application for tracking and visualizing personal finances with budgeting capabilities.
 
-**URL**: https://lovable.dev/projects/d094c037-5a7a-4b86-ad50-02610b8a99c8
+## 🚀 Features
 
-## How can I edit this code?
+### ✅ Stage 1: Basic Transaction Tracking
+- **Transaction Management**: Add, edit, and delete transactions with amount, date, and description
+- **Transaction List View**: Clean, organized display of all transactions
+- **Monthly Expenses Chart**: Visual bar chart showing monthly spending patterns
+- **Form Validation**: Input validation for accurate data entry
 
-There are several ways of editing your application.
+### ✅ Stage 2: Categories
+- **Predefined Categories**: Organized transaction categorization system
+- **Category Pie Chart**: Visual breakdown of expenses by category
+- **Dashboard Summary**: 
+  - Total expenses overview
+  - Category breakdown cards
+  - Most recent transactions display
 
-**Use Lovable**
+### ✅ Stage 3: Budgeting (Current)
+- **Monthly Budget Setting**: Set spending limits for each category
+- **Budget vs Actual Comparison**: Visual charts comparing planned vs actual spending
+- **Spending Insights**: Smart analysis of spending patterns and budget adherence
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d094c037-5a7a-4b86-ad50-02610b8a99c8) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Framework**: Next.js 14
+- **Frontend**: React 18
+- **UI Components**: shadcn/ui
+- **Charts**: Recharts
+- **Database**: MongoDB
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
 
-**Use your preferred IDE**
+## 📱 Design Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Error States**: Comprehensive error handling and user feedback
+- **Modern UI**: Clean, intuitive interface with shadcn/ui components
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🏗️ Project Structure
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+├── public/
+│   ├── favicon.ico
+│   ├── placeholder.svg
+│   └── robots.txt
+├── src/
+│   └── (application files)
+├── README.md
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── (configuration files)
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
+- Node.js 18+ 
+- MongoDB database
+- npm or yarn
 
-**Use GitHub Codespaces**
+### Installation
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/personal-finance-visualizer.git
+   cd personal-finance-visualizer
+   ```
 
-## What technologies are used for this project?
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-This project is built with:
+3. **Set up environment variables**
+   Create a `.env.local` file in the root directory:
+   ```env
+   MONGODB_URI=your_mongodb_connection_string
+   NEXTAUTH_SECRET=your_secret_key
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+4. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-## How can I deploy this project?
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-Simply open [Lovable](https://lovable.dev/projects/d094c037-5a7a-4b86-ad50-02610b8a99c8) and click on Share -> Publish.
+## 📊 Dashboard Overview
 
-## Can I connect a custom domain to my Lovable project?
+### Transaction Management
+- Quick add transaction form
+- Transaction history with search and filter
+- Edit/delete functionality with confirmation
 
-Yes, you can!
+### Visual Analytics
+- **Monthly Expenses**: Bar chart showing spending trends
+- **Category Breakdown**: Pie chart of expense categories
+- **Budget Comparison**: Visual comparison of budget vs actual spending
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Budget Insights
+- Budget utilization indicators
+- Spending alerts and recommendations
+- Monthly budget vs actual analysis
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🎯 Usage
+
+1. **Add Transactions**: Use the quick-add form to log your expenses
+2. **Categorize**: Assign transactions to predefined categories
+3. **Set Budgets**: Define monthly spending limits for each category
+4. **Monitor**: Track your spending against budgets with visual charts
+5. **Analyze**: Review spending patterns and insights
+
+## 🔧 Available Scripts
+
+```bash
+# Development
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run start        # Start production server
+npm run lint         # Run ESLint
+npm run type-check   # Run TypeScript checks
+```
+
+## 📈 Future Enhancements
+
+- **Stage 4**: Advanced reporting and analytics
+- **Stage 5**: Goal setting and financial planning
+- **Stage 6**: Multi-user support and data export
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**Project Status**: Stage 3 Complete ✅ | Budgeting Features Implemented
